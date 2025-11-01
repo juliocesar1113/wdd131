@@ -1,0 +1,139 @@
+:root {
+    --color-primary: ;
+    --color-secondary: ;
+    --font-family: var("Roboto", sans-serif);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-optical-sizing: auto;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #B8860B;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.course-title {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    background-color: #a9a9a9;
+    padding: 10px;
+}
+
+nav a:hover {
+    border: 1px solid;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+
+}
+
+.dr {
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 5px;
+  margin-bottom: 1rem;
+}
+
+.julio-foto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-direction: row-reverse;
+}
+
+.julio-foto img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); }
+
+.dr {
+  border-bottom: 1px solid var(--color-primary);
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 5px;
+}
+
+.country-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.Dominican-flag {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+aside li {
+  margin-bottom: 0.5rem;
+}
+
+aside a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--color-primary);
+  color: black;
+  margin-top: 2rem;
+}
+
+
