@@ -109,21 +109,21 @@ main {
   flex-shrink: 0;
 }
 
-aside ul {
+section ul {
   list-style: none;
   padding-left: 0;
 }
 
-aside li {
+section li {
   margin-bottom: 0.5rem;
 }
 
-aside a {
+section a {
   color: var(--color-primary);
   text-decoration: none;
 }
 
-aside a:hover {
+section a:hover {
   text-decoration: underline;
 }
 
