@@ -1,0 +1,42 @@
+
+@media screen and (min-width: 768px) {
+
+  /* HEADER */
+  #hamburger {
+    display: none;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    background: none;
+    border: none;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  nav a {
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+  }
+
+  nav a:hover {
+    background: #eee;
+  }
+
+  .temple-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+  }
+
+  figure img {
+      height: 200px;
+  }
+}
