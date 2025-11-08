@@ -37,10 +37,10 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-header h1 {
+header h2 {
   font-family: var(--font-heading);
   margin: 0;
-  
+  font-size: 33px;
 }
 
 #hamburger {
@@ -79,6 +79,7 @@ main {
 main h1 {
   margin-top: 0;
   font-family: var(--font-heading);
+  font-size: 25px;
 }
 
 .gallery {
