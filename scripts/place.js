@@ -4,8 +4,6 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("modified").textContent = document.lastModified;
 
-
-
 // WIND CHILL CALCULATION
 function calculateWindChill(temp, speed) {
     if (temp <= 50 && speed > 3) {
