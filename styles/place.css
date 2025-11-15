@@ -1,0 +1,72 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0;
+    background: #005f73;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-box,
+.weather-box {
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    position: static; /* mobile default */
+}
+
+/* DESKTOP MODE */
+@media (min-width: 900px) {
+
+    .hero-section {
+        height: 600px; 
+        overflow: hidden;
+    }
+
+    .hero-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .data-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 250px;
+    }
+
+    .weather-box {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        width: 250px;
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #005f73;
+    color: white;
+}
