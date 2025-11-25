@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+<body>
+
+<header>
+    <h1 id="page-title">Temple Album</h1>
+    <nav id="menu">
+        <a data-filter="home">Home</a>
+        <a data-filter="old">Old</a>
+        <a data-filter="new">New</a>
+        <a data-filter="large">Large</a>
+        <a data-filter="small">Small</a>
+    </nav>
+</header>
+
+<main>
+    <div id="temple-grid" class="temple-grid"></div>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+<script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
