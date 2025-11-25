@@ -19,14 +19,19 @@ nav {
 }
 
 nav a {
-    background: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    color: white;
     text-decoration: none;
-    color: #005a9c;
-    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: 0.3s, color 0.3s; 
 }
+
+nav a:hover {
+    background-color: #ffffff; 
+    color: #005a9c; 
+    border-radius: 5px; 
+}
+
 
 .temple-grid {
     display: grid;
@@ -50,4 +55,26 @@ figure img {
 footer {
     text-align: center;
     padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .temple-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
 }
