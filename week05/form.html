@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" action="review.html" method="get">
+      
+      <!-- Product Name -->
+      <label for="productSelect">Product Name *</label>
+      <select id="productSelect" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating *</legend>
+        <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
+        <label><input type="radio" name="rating" value="2"> 2 ☆</label>
+        <label><input type="radio" name="rating" value="3"> 3 ☆</label>
+        <label><input type="radio" name="rating" value="4"> 4 ☆</label>
+        <label><input type="radio" name="rating" value="5"> 5 ☆</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation *</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Which features did you find useful?</legend>
+        <label><input type="checkbox" name="features" value="punctuality"> Punctuality</label>
+        <label><input type="checkbox" name="features" value="communication"> Communication</label>
+        <label><input type="checkbox" name="features" value="responsible"> Responsible</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="reviewText">Written Review</label>
+      <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+      <!-- User Name -->
+      <label for="userName">Your Name</label>
+      <input type="text" id="userName" name="userName">
+
+      <!-- Submit -->
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Product Reviews</p>
+  </footer>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

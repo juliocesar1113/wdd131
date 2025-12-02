@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Thank You!</h1>
+    <p>Your review has been submitted.</p>
+    <p id="counter">Total reviews submitted: 0</p>
+  </main>
+
+  <script>
+    let count = localStorage.getItem('reviewCount') || 0;
+    count++;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById('counter').textContent = `Total reviews submitted: ${count}`;
+  </script>
+</body>
+</html>
