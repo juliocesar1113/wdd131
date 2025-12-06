@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Julio Castillo"/>
+  <meta name="description" content="Here we introduce our store website of women bags, catalog, deals and contact info. "/>
+  <title>Maison Bags — Inicio</title>
+  <link rel="stylesheet" href="styles/maison.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.jpg" alt="Maison Bags logo" class="logo" />Maison Bags</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <ul id="site-nav" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="deals.html">Ofertas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Bolso elegante para todos los días</h1>
+        <p>Maison Bags selecciona diseños atemporales y esenciales para tu día a día. Explora la colección y guarda tus favoritos.</p>
+        <a class="btn primary" href="catalog.html">Ver colección</a>
+      </div>
+      <img src="images/sosteniendo-bolso.jpg" alt="Persona sosteniendo bolso" loading="lazy" class="hero-img" />
+    </section>
+
+    <section class="featured">
+      <h2>Productos destacados</h2>
+      <div id="featured-list" class="cards-grid">Cargando...</div>
+    </section>
+
+    <section class="about">
+      <h2>Nuestra historia</h2>
+      <p>Diseñamos piezas pensadas para durar.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Maison Bags — <a href="references.html">Referencias</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/bagdata.js" defer></script>
+  <script src="scripts/maison.js" defer></script>
+</body>
+</html>

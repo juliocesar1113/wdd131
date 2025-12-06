@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Julio Castillo"/>
+  <meta name="description" content="Here we introduce our store website of women bags, catalog, deals and contact info. "/>
+  <title>Maison Bags — Contacto</title>
+  <link rel="stylesheet" href="styles/maison.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Maison Bags logo" class="logo" />Maison Bags</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <ul id="site-nav" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="deals.html">Ofertas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contacto</h1>
+
+    <form id="contact-form" novalidate>
+      <label>Nombre
+        <input type="text" id="name" name="name" required minlength="2" />
+      </label>
+
+      <label>Email
+        <input type="email" id="email" name="email" required />
+      </label>
+
+      <label>Mensaje
+        <textarea id="message" name="message" required minlength="10"></textarea>
+      </label>
+
+      <button class="btn" type="submit">Enviar mensaje</button>
+      <div id="form-result" role="status" aria-live="polite" class="small"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Maison Bags — <a href="references.html">Referencias</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/maison.js" defer></script>
+</body>
+</html>

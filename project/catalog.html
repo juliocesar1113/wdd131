@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Julio Castillo"/>
+  <meta name="description" content="Here we introduce our store website of women bags, catalog, deals and contact info. "/>
+  <title>Maison Bags — Catálogo</title>
+  <link rel="stylesheet" href="styles/maison.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand"><img src="images/logo.svg" alt="Maison Bags logo" class="logo" />Maison Bags</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <ul id="site-nav" class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalog.html">Catálogo</a></li>
+          <li><a href="deals.html">Ofertas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Catálogo</h1>
+
+    <div class="controls">
+      <label>Filtrar:
+        <select id="filter-type">
+          <option value="all">Todos</option>
+          <option value="tote">Tote</option>
+          <option value="crossbody">Crossbody</option>
+          <option value="shoulder">Shoulder</option>
+        </select>
+      </label>
+
+      <label>Ordenar:
+        <select id="sort-by">
+          <option value="featured">Destacados</option>
+          <option value="price-asc">Precio: bajo → alto</option>
+          <option value="price-desc">Precio: alto → bajo</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="catalog-grid" class="cards-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Maison Bags — <a href="references.html">Referencias</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/bagdata.js" defer></script>
+  <script src="scripts/maison.js" defer></script>
+</body>
+</html>
